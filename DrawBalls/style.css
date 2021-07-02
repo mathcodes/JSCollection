@@ -1,0 +1,47 @@
+html, body {
+    touch-action:none;
+    content:none;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#screen {
+    width:100%;
+    height:80%;
+    margin:auto auto;
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    background: #000;
+    cursor: pointer;
+}
+#screen img { 
+    position: absolute;
+}
+#vb {
+    position: absolute;
+    border-left: #666 dashed 2px;
+    left: 50%;
+    top: 10%;
+    height: 80%;
+    z-index: 10000;
+}
+#title {
+    position: absolute;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    top: 1em;
+}
+#particles {
+    visibility:hidden;
+}

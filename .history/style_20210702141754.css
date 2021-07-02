@@ -23,9 +23,6 @@ body {
   background: linear-gradient(to bottom, #ff3482 0%, #FFF 1%, #111 99%, #ff3482 100%);
   margin: 7% 0% 25% 0%;
 }
-<<<<<<< HEAD
-
-=======
 .imgFooter{
   margin-right:1rem;
   height:3rem;
@@ -44,9 +41,8 @@ body {
 }
 
 .imgLogo{
-  height: 20%;
+  he
 }
->>>>>>> 0525497 (navbar)
 button {
   cursor: pointer;
   outline: none;
@@ -135,11 +131,7 @@ li a:hover {
 }
 
 .navbar {
-<<<<<<< HEAD
     position: relative;
-=======
-    position: fixed;
->>>>>>> 0525497 (navbar)
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -150,14 +142,6 @@ li a:hover {
     display: inherit;
 }
 
-<<<<<<< HEAD
-body {
-  margin: 0;
-  background: url('../joke-teller/all.gif');
-  /* background-repeat: no-repeat; */
-}
-
-=======
 body, html {
   margin: 0;
   background-color: linear-gradient(#000 0%, #444 100%);
@@ -167,12 +151,11 @@ h1{
   margin: 1rem;
 }
 
-.imgJS{
+img{
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
->>>>>>> 0525497 (navbar)
 audio{
   margin-top:60px;
 }
@@ -180,9 +163,6 @@ audio{
 .container {
   opacity: .9;
 }
-<<<<<<< HEAD
- 
-=======
  
 
  .card-body{
@@ -263,4 +243,3 @@ audio{
         @media only screen and (max-width: 300px) {
           .text {font-size: 11px}
         }
->>>>>>> 0525497 (navbar)

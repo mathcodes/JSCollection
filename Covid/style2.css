@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  background: url('./joke-teller/all.gif');
+  /* background-repeat: no-repeat; */
+}
+
+audio{
+  margin-top:60px;
+}
+
+.container {
+  opacity: .8;
+}
