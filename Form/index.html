@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jon's Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Convert HTML Form Values to JSON( click submit to display results )</h2>
+    <div id="left">
+      <textarea id="results"></textarea>
+    </div>
+    <form id="test-form">
+      <table id='json-table'>
+        <tbody>
+          <tr>
+            <th id="firstname">firstname</th>
+            <th id="lastname">lastname</th>
+            <th id="phone1">phone1</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" value="Larry"> </td>
+            <td>
+              <input type="text" value="Lane"> </td>
+            <td>
+              <input type="text" value="111-111-1111"> </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" value="Gypsy"> </td>
+            <td>
+              <input type="text" value="Lane"> </td>
+            <td>
+              <input type="text" value="111-111-1111"> </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <input id="submit" type="submit" value="submit">
+    
+    </form>
+    
+    <br>
+    <br>
+    
+    
+    <div id="right">&nbsp</div>
+      <!-- Sample HTML Form -->
+<form method="post" action="subscriberform.php">
+    <textarea name="message"></textarea>
+    <input type="submit">
+    </form>
+
+
+    <section>
+      <div class="container">
+        <form
+          action="https://formspree.io/f/mwkwqbgo"
+          method="POST"
+          id="my-form"
+        >
+          <div class="form-group">
+            <label for="firstName"> First Name</label>
+            <input type="text" id="firstName" name="firstName" />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="massage">Massage</label>
+            <textarea
+              name="massage"
+              id="massage"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="status"></div>
+      <div id="status">Success</div>
+    </section>
+    <script src="./main.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

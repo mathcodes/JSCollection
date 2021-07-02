@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Scroll</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://raw.githubusercontent.com/mathcodes/jcp2.0.1/master/public/images/portfolio/jCircleWhite.ico"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START-->
+    <div class="navbar sticky">
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./joke-teller/index.html">Jokes</a></li>
+          <li><a class="active" href="./joke-teller/infiniteScroll/indexInfiniteScroll.html">Infinite Scroll</a></li>
+          <li><a href="../pong/index.html">Pong</a></li>
+          <li><a href="../joke-teller/paint-clone/index.html">Paint</a></li>
+          <li><a href="..joke-teller/math-sprint-game/index.html">Speed Math</a></li>
+          <li><a href="./joke-teller/drag-and-drop/index.html">Work Flow</a></li>
+          <li><a href="./joke-teller/spock-rock-game/index.html">RPS Shoot!</a></li>
+    </ul>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+    <br />
+    <br />
+    <!-- Title -->
+    <h1>Unsplash API - Infinite Scroll</h1>
+    <!-- Loader -->
+    <div class="loader" id="loader" hidden>
+      <img src="loader.svg" alt="Loading" />
+    </div>
+    <!-- Image Container -->
+    <div class="image-container" id="image-container"></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

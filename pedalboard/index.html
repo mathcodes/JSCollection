@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, 
+#div13, #div14, #div15, #div16,  {
+  width: 95%;
+  height: 20px;
+  width: 20px;
+  padding: 0px;
+  margin-right: 5px;
+  border: 3px solid #aaaaaa;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Pedalboard Planner</h1>
+
+<p>A Grid Container consists of grid items arranged in columns and rows</p>
+
+<div class="grid-container">
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div10" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div12" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div13" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+  <div id="div14" ondrop="drop(event)" ondragover="allowDrop(event)">1</div>
+ 
+</div>
+
+<p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
+
+
+<div class="container">
+    <div="row">
+<div class="column" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="column" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="column" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="column" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+</div>
+<div class="container">
+    <div="row">
+<div class="col-3" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="col-3" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="col-3" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="col-3" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+</div>
+<br>
+<img id="drag1" src="./images/BBESonicStomp.jpg" draggable="true" ondragstart="drag(event)" width="auto" height="69">
+<img id="drag2" src="./images/DITTO LOOPER.jpg" draggable="true" ondragstart="drag(event)" width="auto" height="69">
+<img id="drag3" src="./images/OverDrive.jpg" draggable="true" ondragstart="drag(event)" width="auto" height="69">
+<img id="drag4" src="./images/Line Selector.jpg" draggable="true" ondragstart="drag(event)" width="auto" height="69">
+<img id="drag5" src="./images/LoopStation Rc-1.jpg" draggable="true" ondragstart="drag(event)" width="auto" height="69">
+<img id="drag6" src="./images/L67853000000000-00-220x220.jpg" draggable="true" ondragstart="drag(event)" width="auto" height="69">
+<img id="drag7" src="./images/J57204000000000-00-220x220.jpg" draggable="true" ondragstart="drag(event)" width="auto" height="69">
+<img id="drag8" src="./images/J19628000000000-00-220x220.jpg" draggable="true" ondragstart="drag(event)" width="auto" height="69">
+<img id="drag9" src="./images/151395000000000-00-220x220.jpg" draggable="true" ondragstart="drag(event)" width="auto" height="69">
+
+</body>
+</html>
