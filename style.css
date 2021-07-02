@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #FFF 0%, #333 100%);
+}
+
+ 
+/* button, audio {
+  z-index: 5;
+} */
+
+.container {
+  padding: 30px;
+  height: content;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ff3482 0%, #FFF 1%, #111 99%, #ff3482 100%);
+  margin: 7% 0% 25% 0%;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background: #ff3482;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.navbar{
+  position: sticky;
+  border-bottom: 50px;
+  border-color: yellow;
+  z-index: 100;
+  border-bottom: 3px solid red;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a.active {
+ 
+  background-color: #111;
+}
+
+.embed-container{
+  margin-top:60px;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    width: 100%;
+    display: inherit;
+}
+
+body {
+  margin: 0;
+  background: url('../joke-teller/all.gif');
+  /* background-repeat: no-repeat; */
+}
+
+audio{
+  margin-top:60px;
+}
+
+.container {
+  opacity: .9;
+}
+ 
